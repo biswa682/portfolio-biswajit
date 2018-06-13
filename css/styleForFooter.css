@@ -1,0 +1,48 @@
+footer{
+	width: 100%;
+	height: 400px;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+footer #contact-me {
+	width: 100%;
+	height: 80%;
+	text-align: center;
+}
+footer #contact-me h4{
+	font-size: 40px;
+	padding: 40px 0 40px 0;
+	font-family: 'Inconsolata', monospace;
+}
+footer #contact-me #contact-links ul{
+	display: flex;
+	justify-content: center;
+}
+footer #contact-me #contact-links ul li{
+	list-style: none;
+	width: 30%;
+}
+footer #contact-me #contact-links ul li a{
+	text-decoration: none;
+	font-size: 30px;
+	color: white;
+}
+footer #footer-part{
+	font-size: 20px;
+	border-top: 2px solid white;
+	padding-top: 20px; 
+}
+@media screen and (max-width: 375px){
+	footer #contact-me h4{
+		font-size: 30px;
+		text-align: center;
+	}
+	#contact-me #contact-links ul{
+		flex-direction: column;
+		align-items: center;
+	}
+	#contact-me #contact-links ul li{
+		text-align: center;
+	}
+}

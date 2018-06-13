@@ -1,0 +1,104 @@
+header{
+	min-height: 100px;
+	width: 100%;
+	color: white;
+	background-color: #000000;
+}
+header #btn1, label{
+	display: none;
+}
+header #myname{
+	display: inline;
+	float:left;
+	/*margin: 5px 0 0 50px;*/
+}
+header #myname h2{
+	/*margin: 25px 0 0 50px;*/
+	padding: 25px 0 0 50px;
+	font-size: 30px;
+	font-family: 'Arvo', serif;
+	word-spacing: 20px;
+}
+header nav{
+	float: right;
+	/*margin: 35px 0 0 250px;*/
+	margin: 35px 10px 0 0 ;
+}
+header nav ul{
+	margin: 0 auto;
+	padding: 0;
+	text-transform: uppercase;
+}
+header nav ul li{
+	display: inline-block;
+	list-style: none;
+	padding-right: 60px; 
+}
+header nav ul li a{
+	font-size: 20px;
+	
+	color: white;
+	text-decoration: none;
+}
+header nav ul li a:hover{
+	color: #1aff1a;
+}
+header nav ul li span a{
+	color: #ffa31a;
+}
+
+
+@media screen and (max-width: 900px){
+
+	header{
+		height: 250px;
+		/*width: 100%;*/
+		/*margin: auto;*/
+		/*text-align: center;*/
+	}
+	header #myname{
+		/*display: none;*/
+		/*padding: 0;*/
+		margin: 70px 0 20px 0;
+		width: 100%;
+		text-align: center;
+	}
+	header #myname h2{
+		padding: 0;
+	}
+	header #myname h2 span{
+		/*display: block;*/
+	}
+	header nav{
+		margin: 0;
+		width: 100%;
+		/*clear: left;*/
+	}
+	header nav ul{
+		width: 100%;
+		text-align: center;
+	}
+	header nav ul li{
+		display: block;
+		padding: 0;
+		/*text-align: center; */
+		margin: 10px 0 10px 0;
+	}
+	header nav ul li:hover{
+		background-color: blue;
+	}
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px){
+	header{
+		height: 300px;
+	}
+}
+@media screen and (max-width: 375px){
+	header{
+		height: 200px;
+	}
+	header #myname{
+		margin-top: 25px;
+	}
+}

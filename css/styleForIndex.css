@@ -12,6 +12,7 @@ body{
 	margin: 0;
 	padding: 0;
 }
+
 header{
 	min-height: 100px;
 	width: 100%;
@@ -35,21 +36,22 @@ header #myname h2{
 }
 header nav{
 	float: right;
-	margin: 35px 100px 0 0;
+	/*margin: 35px 0 0 250px;*/
+	margin: 35px 10px 0 0 ;
 }
 header nav ul{
-	text-transform: uppercase;
+	margin: 0 auto;
 	padding: 0;
-	margin: 0;
+	text-transform: uppercase;
 }
 header nav ul li{
-	display: inline;
-	float: left;
+	display: inline-block;
+	list-style: none;
 	padding-right: 60px; 
 }
 header nav ul li a{
 	font-size: 20px;
-	list-style: none;
+	
 	color: white;
 	text-decoration: none;
 }
@@ -148,7 +150,7 @@ header nav ul li span a{
 	margin: 50px;
 }
 #contents .box-container .align-left{
-	display: inline;
+	/*display: inline;*/
 	float: left;
 	margin-left: 150px;
 }
@@ -192,7 +194,7 @@ footer #footer-part{
 	padding-top: 20px; 
 }
 
-@media screen and (min-width: 740px) and (max-width: 1024px) {
+@media screen and (max-width: 768px){
 
 	#contents .box-container .img-part{
 		height: 220px;
@@ -205,28 +207,90 @@ footer #footer-part{
 	}
 
 	header{
-		height: 310px;
-		width: 100%;
-		margin: auto;
+		height: 250px;
+		/*width: 100%;*/
+		/*margin: auto;*/
+		/*text-align: center;*/
 	}
 	header #myname{
+		/*display: none;*/
+		/*padding: 0;*/
+		margin: 70px 0 20px 0;
 		width: 100%;
 		text-align: center;
 	}
+	header #myname h2{
+		padding: 0;
+	}
+	header #myname h2 span{
+		/*display: block;*/
+	}
 	header nav{
-		clear: right;
 		margin: 0;
 		width: 100%;
-
+		/*clear: left;*/
 	}
 	header nav ul{
+		width: 100%;
 		text-align: center;
 	}
 	header nav ul li{
-		clear: left;
-		text-align: center;
+		display: block;
+		padding: 0;
+		/*text-align: center; */
+		margin: 10px 0 10px 0;
 	}
-	
+	header nav ul li:hover{
+		background-color: blue;
+	}
+	#big-picture .quotes-on-image{
+		height: 100px;
+		padding: 60px 70px 0 70px;
+	}
+	#about-me{
+		min-height: 00px;
+		width: 100%;
+	}
+	#about-me p{
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	#about-me a{
+		font-size: 15px;
+		background-color: #004080;
+		color: #fff;
+		text-decoration: none;
+		border: 1px solid #004080;
+		border-radius: 10px;
+		padding: 10px;
+	}
+	#contents
+	{
+		min-height: 1800px;
+	}
+	#contents .box-container{
+		height: 600px;
+
+	}
+	#contents .box-container .align-left{
+		margin: 0;
+		display: block;
+		clear: left;
+	}
+	#contents .box-container .align-right{
+		overflow: auto;
+		margin: 0;
+	}
+	#contents .box-container .about-part{
+		height: 200px;
+		width: 200px;
+		text-align: center;
+
+	}
+	#contents .box-container .img-part{
+		height: 200px;
+		width:200px;
+	}
     /*header{
     	height: 310px;  
     	width: 100%;
@@ -244,11 +308,11 @@ footer #footer-part{
     	font-size: 30px;
     	border: 2px solid white;
     	border-radius: 5px;
-    	cursor: pointer;
+    	cursor .align-l;
     }
     header nav{
-    	height: 0;
-    	overflow: hidden;
+    	height: 0; ft: pointer
+    	overflow: hidden;		clear: ;
     }
     header > input:checked + label{
     	color: blue;
