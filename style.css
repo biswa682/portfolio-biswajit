@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Nunito|Open+Sans+Condensed:300|Raleway|Roboto+Mono|Sunflower:300');
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+header .name-logo {
+    text-align: center;
+    flex: 1;
+    font-family: 'Montserrat', sans-serif;
+    word-spacing: 15px;
+}
+
+header nav {
+    flex: 1;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+header nav ul li span a {
+    color: #ff8533;
+}
+
+
+.big-picture {
+    position: relative;
+}
+
+.big-picture img {
+    width: 100%;
+}
+
+.big-picture .quotes-on-image {
+    position: absolute;
+    top: 25vw;
+    left: 10vw;
+    font-size: 3vw;
+}
+
+.big-picture .quotes-on-image h3 {
+    color: #cccccc;
+    font-family: 'Nunito', sans-serif;
+}
+
+.big-picture .quotes-on-image h4 {
+    color: #999999;
+    font-family: 'Nunito', sans-serif;
+}
+
+.big-picture .quotes-on-image h4>strong a {
+    text-decoration: none;
+    color: #ff8533;
+}
+
+.about-me-details {
+    margin: 50px;
+    padding-bottom: 50px;
+    background-color: #e6e6e6;
+}
+
+.about-me {
+    text-align: center;
+}
+
+.about-me h3 {
+    padding: 10% 0 0 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.about-me p {
+    padding: 2% 10% 0 10%;
+    text-align: justify;
+    color: #666666;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-me .project-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+    justify-items: center;
+    padding: 5vw;
+}
+
+.project-details {
+    background-color: #8c8c8c;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.project-details .proj-img img {
+    padding: 20px;
+    width: 18vw;
+}
+
+.project-details .about-proj {
+    /*font-size: 1.1vw;*/
+}
+
+.project-details .about-proj p {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 10px;
+    color: #f2f2f2;
+    font-size: 12px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+footer nav ul li {
+    list-style: none;
+    flex: 1;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+footer .contact-me h4 {
+    padding-top: 15px;
+    font-size: 29px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer .footer-part h4 {
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    word-spacing: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        font-size: 15px;
+    }
+    .about-me-details {
+        margin: 0;
+    }
+    .about-me .project-section {
+        grid-column-gap: 35px;
+    }
+    .project-details .proj-img img {
+        width: 30vw;
+    }
+    footer .contact-me h4 {
+        font-size: 20px;
+    }
+    footer .contact-me nav ul li a {
+        font-size: 15px;
+    }
+    footer .footer-part h4 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 611px) {
+    .about-me .project-section {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-column-gap: 15px;
+    }
+    .project-details .proj-img img {
+        width: 30vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+    .about-me-details {
+        margin: 0;
+    }
+    .about-me .project-section {
+        grid-column-gap: 30px;
+    }
+    .project-details .proj-img img {
+        width: 40vw;
+    }
+    footer .contact-me h4 {
+        font-size: 15px;
+        margin: 5px 0 5px 0;
+    }
+    footer nav ul {
+        margin: 0;
+        flex-direction: column;
+    }
+    footer .contact-me nav ul li a {
+        font-size: 10px;
+    }
+    footer .footer-part h4 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 466px) {
+    .project-details .proj-img img {
+        width: 50vw;
+    }
+}
